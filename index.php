@@ -1,38 +1,44 @@
-<?php
-include 'db.php';
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $birth_date = $_POST['birth_date'];
-
-    $sql = "INSERT INTO warriors (first_name, last_name, birth_date) VALUES ('$first_name', '$last_name', '$birth_date')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "New warrior registered successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
-    $conn->close();
-}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register Warrior</title>
+    <title>Dragon Ball Warriors Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        .btn {
+            background: #333;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            border: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #555;
+        }
+    </style>
 </head>
 <body>
-    <h2>Register New Warrior</h2>
-    <form action="register.php" method="post">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" required><br><br>
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" required><br><br>
-        <label for="birth_date">Birth Date:</label>
-        <input type="date" id="birth_date" name="birth_date" required><br><br>
-        <input type="submit" value="Register">
-    </form>
+    <div class="container">
+        <h1>Dragon Ball Warriors Management System</h1>
+        <a href="register.php" class="btn">Register New Warrior</a>
+        <a href="register_skill.php" class="btn">Register Warrior Skill</a>
+    </div>
 </body>
 </html>
