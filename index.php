@@ -39,6 +39,7 @@
         <h1>Dragon Ball Warriors Management System</h1>
         <a href="register.php" class="btn">Register New Warrior</a>
         <a href="register_skill.php" class="btn">Register Warrior Skill</a>
+        <a href="warrior_skills_view.php" class="btn">Gerreros con sus habilidades</a>
     </div>
 </body>
 </html>
