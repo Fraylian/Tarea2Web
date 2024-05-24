@@ -50,7 +50,10 @@ $result = $conn->query($sql);
                 ?>
             </tbody>
         </table>
-        
+        <div class="mt-4">
+            <a href="edit_skill.php" class="btn btn-primary">Editar habilidades</a>
+            <a href="edit_warrior.php" class="btn btn-primary">Editar guerreros</a>
+        </div>
     </div>
     <!-- Incluye Bootstrap JS y sus dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
