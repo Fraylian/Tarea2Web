@@ -61,22 +61,25 @@ $conn->close();
     </style>
 </head>
 <body>
-    <div class="header">Guerreros Z</div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">Guerreros Z</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="register.php">Register Warrior</a>
+                        <a class="nav-link" href="register.php">Registrar nuevo Guerrero</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register_skill.php">Register Skill</a>
+                        <a class="nav-link" href="register_skill.php">Registrar Nuevas habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="warrior_skills_view.php">View Warriors</a>
+                        <a class="nav-link" href="warrior_skills_view.php">Guerreros con sus habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashboard.php">Dashboard</a>
                     </li>
                 </ul>
             </div>

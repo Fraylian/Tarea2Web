@@ -18,8 +18,32 @@ $habilidades_extremas = $conn->query("SELECT MAX(power_level) AS max_poder, MIN(
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">Guerreros Z</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php">Registrar nuevo Guerrero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register_skill.php">Registrar Nuevas habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="warrior_skills_view.php">Guerreros con sus habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashboard.php">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <div class="container mt-5">
-    <h1>Dashboard de Estadísticas - Dragon Ball Warriors</h1>
+    <h1>Dashboard de Estadísticas - Dragon Ball </h1>
     <div class="row">
         <div class="col-sm-6 col-lg-3">
             <div class="card text-white bg-primary mb-3">
